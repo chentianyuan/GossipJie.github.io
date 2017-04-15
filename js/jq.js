@@ -1,0 +1,20 @@
+$(function(){
+	//热门，推荐，最新，附近，hover样式切换
+	var allitem = $(".mui-control-item");	
+	allitem[0].addEventListener('tap',function(){
+		clear_class(allitem);
+		allitem[0].classList.add("active-item");
+	});
+	allitem[1].addEventListener('tap',function(){
+		clear_class(allitem);
+		allitem[1].classList.add("active-item");
+	});
+	allitem[2].addEventListener('tap',function(){
+		clear_class(allitem);
+		allitem[2].classList.add("active-item");
+	});
+	allitem[3].addEventListener('tap',function(){
+		clear_class(allitem);
+		allitem[3].classList.add("active-item");
+	});	
+});

@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<style type="text/css">
+		.mui-row{
+			display:block;
+		}
+		.mui-row img{
+			width:20%;
+			height:60px;
+		}
+		.mui-row a:last-child{
+			float:right;
+			margin-right:20px;
+			line-height:30px;
+		}
+		.mui-card-content img{
+			display:block;
+			width:100%;
+			height:200px;
+			margin:0 auto;
+		}
+		.mui-card-content p{
+			text-indent:22px;
+			font-size:16px;
+			line-height:22px;
+		}
+		.mui-card-footer h4{
+			display:inline-block;
+		}
+		.mui-card-footer span{
+			font-size:14px;
+			color:#000;
+		}
+		.mui-switch{
+			display:inline-block;
+			float:right;
+		}
+		.money{
+			display:inline-block;
+			float:right;
+			padding:3px 10px;
+			border:1px solid #222222;
+			border-radius:10px;
+			color:#222222;
+		}
+		#footer-2:before{
+			content:'';
+			height:0;
+		}
+		#next{
+			float:right;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style=""></a>
+	    <h1 class="mui-title">编辑</h1>
+			<button type="button" class="mui-btn mui-btn-blue" id="next" style="margin-top:-2px;">下一步</button>
+	</header>
+	<!--
+	<div class="mui-content">
+		<p class="mui-content-padded">asdasd啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿啊啊啊啊啊111</p>
+	</div>
+	-->
+	<div class="mui-content">
+		<div class="mui-card">
+			<!--页眉，放置标题-->
+			<div class="mui-card-header mui-card-media">
+				<div class="mui-row" id="head">			
+				</div>
+			</div>
+			<!--内容区-->
+			<div class="mui-card-content">
+				<img src="images/cat.jpg" />
+				<p>可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫可爱的猫</p>
+			</div>
+			<!--页脚，放置补充信息或支持的操作-->
+			<div class="mui-card-footer">
+				<div class="mui-row" style="width:100%;">
+					<h4>时间</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>2017年4月12日</span>
+					<!-- 开关打开状态，多了一个.mui-active类 -->
+					<div class="mui-switch mui-active  mui-switch-mini">
+					 	<div class="mui-switch-handle"></div>
+					</div>
+					<a>收费设置</a> 
+				</div>
+			</div>
+			<div class="mui-card-footer" id="footer-2">
+				<div class="mui-row" style="width:100%;">
+					<h4>地点</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>中国 湖北省</span>
+					<!-- 开关打开状态，多了一个.mui-active类 -->
+					<a class="money">
+						￥5.00
+					</a>
+					<a>设置金额</a> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jqshare.js"></script>
+	<script src="js/photo.js"></script>
+	<script type="text/javascript">
+		mui.init();
+		mui.plusReady(function(){
+			mui(".mui-pull-right").off('tap');
+			var self = plus.webview.currentWebview();
+			/*console.log(self.pic1);
+			console.log(self.pic2);
+			console.log(self.pic3);
+			console.log(self.pic4);
+			console.log(self.pic5);
+			var l = getJsonLength(self);
+			console.log(l);*/
+			updata(self);
+		});
+
+	function getJsonLength(json){
+                var jsonLength=0;
+                for (var i in json) {
+                    jsonLength++;
+                }
+                return jsonLength;
+            }		
+	</script>
+</body>
+
+</html>

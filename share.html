@@ -1,121 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>Photo</title>
-    <script src="js/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="./css/icons-extra.css">    
-    <style>
-		.mybtn{
-			/*position: absolute;
-			bottom: 65px;
-			margin:0px 30%;*/
-			text-align: center;
-			position: absolute;
-			bottom: 0;			
-			left: 0;
-			right: 0;
-			margin: auto;
-			/*test*/
-			width: 300px;
-			height: 200px;
-		}
-		.mybtn button{
-			border-radius: 100px;
-			height: 100px;
-			width: 100px;
-		}
-		
-		.mui-btn-success {
-			left: -10px;
-		}
-
-		.mui-btn-warning {
-			right: -10px;
-		    
-		}
-    </style>
+<meta charset="UTF-8">
+<title>分享</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link href="css/mui.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/share.css" />
+<link rel="stylesheet" href="css/homePage.css" />
 </head>
 <body>
-	<header class="mui-bar mui-bar-nav">		
-		<h3 class="mui-title">
-			分享
-		</h3>	
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title" style="font-weight:550;">分享</h1>
+	    <a class="mui-pull-right" style="cursor:pointer;font-weight:400;line-height:42px;font-family:'微软雅黑';font-size:13px;">选择</a>
 	</header>
-		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item" id='index'>
-				<span class="mui-icon mui-icon-home"></span>
-				<span class="mui-tab-label">首页</span>
-			</a>
-			<a class="mui-tab-item" id="find">
+	<div class="mui-content">
+		<div class="mui-content">
+			<img style="width:100%;height:250px;" src="images/1.JPG"/> 
+		</div>
+			<ul class="group">
+				<li>
+					<img src="images/camear.JPG">
+					<input accept="image/*" type="file">
+				</li>
+				<li>
+					<img src="images/1.JPG">
+					<input type="checkbox" class="choose">
+				</li>
+				<li>
+					<img src="images/cat.jpg">
+					<input type="checkbox" class="choose">
+				</li>
+				<li>
+					<img src="images/house.jpg">
+					<input type="checkbox" class="choose">
+				</li>	
+				<li>
+					<img src="images/city.jpg">
+					<input type="checkbox" class="choose">
+				</li>		
+			 </ul>
+	</div>	
+	<nav class="mui-bar mui-bar-tab" id="bottom-nav">
+			    <a class="mui-tab-item" id="mui-tab-item-1">
+			        <span class="mui-icon mui-icon-home"></span>
+			        <span class="mui-tab-label">首页</span>
+			    </a>
+			    <a class="mui-tab-item" id="mui-tab-item-2">
 			        <span class="mui-icon mui-icon-search"></span>
 			        <span class="mui-tab-label">发现</span>
-			</a>
-			<a class="mui-tab-item mui-active" href="#tabbar-with-contact" id="share">
-				<span class="mui-icon mui-icon-plusempty"></span>
-				<span class="mui-tab-label">分享</span>
-			</a>
-			<a class="mui-tab-item" href="#tabbar-with-map" id="question">
-				<span class="mui-icon mui-icon-help"></span>
-				<span class="mui-tab-label">问答</span>
-			</a>
-			<a class="mui-tab-item" href="#tabbar-with-map" id="info">
-				<span class="mui-icon mui-icon-contact"></span>
-				<span class="mui-tab-label">我的</span>
-			</a>
+			    </a>
+			    <a class="mui-tab-item mui-active" id="mui-tab-item-3">
+			        <span class="mui-icon mui-icon-paperclip"></span>
+			        <span class="mui-tab-label">分享</span>
+			    </a>
+			    <a class="mui-tab-item" id="mui-tab-item-4">
+			        <span class="mui-icon mui-icon-chatbubble"></span>
+			        <span class="mui-tab-label">问答</span>
+			    </a>
+			     <a class="mui-tab-item" id="mui-tab-item-5">
+			        <span class="mui-icon mui-icon-person"></span>
+			        <span class="mui-tab-label">我的</span>
+			    </a>
 		</nav>
-		<div class="mui-content">
-			<div class="mybtn">
-				<button type="button" class="mui-btn mui-btn-success">
-						我要拍照
-				</button>			
-				<button type="button" class="mui-btn mui-btn-warning">
-					我的相册
-				</button>
-			</div>
-		</div>
-		<script type="text/javascript" charset="utf-8">
-	    mui.init();
-	    var index = document.getElementById('index');
-	    var find = document.getElementById('find');
-	    var share = document.getElementById('share');
-	    var question = document.getElementById('question');
-	    var info = document.getElementById('info');
-	    index.onclick = function(){
-	    	//打开新窗口
-				mui.openWindow({ 
-						url:'index.html', //需要打开页面的url地址 
-						id:'index',  //需要打开页面的url页面id
-				});
-		}
-		find.onclick = function(){
-			mui.openWindow({ 
-				url:'find.html', //需要打开页面的url地址 
-				id:'find',  //需要打开页面的url页面id
-			});
-		}
-		share.onclick = function(){
-			mui.openWindow({ 
-				url:'share.html', //需要打开页面的url地址 
-				id:'share',  //需要打开页面的url页面id
-			});
-		}
-		question.onclick = function(){
-			mui.openWindow({ 
-				url:'question.html', //需要打开页面的url地址 
-				id:'question',  //需要打开页面的url页面id
-			});
-		}
-		info.onclick = function(){
-			mui.openWindow({ 
-				url:'info.html', //需要打开页面的url地址 
-				id:'info',  //需要打开页面的url页面id
-			});
-		}
-		
-	    </script>
 </body>
-
+<script src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+<script type="text/javascript" src="js/control.js"></script>
+<script type="text/javascript" src="js/jqshare.js" ></script>
+<script type="text/javascript">
+	mui.init();
+	mui.plusReady(function(){
+		openNewScreen();
+		setShare();
+	});
+</script>
 </html>
