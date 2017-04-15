@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="../css/mui.min.css" rel="stylesheet" />
+	<style>
+		.mui-content{
+			position:relative;
+			width:100%;
+		}
+		.mui-pull-right{
+			color:#000;
+			line-height:45px;
+			font-weight:bold;
+		}
+		.mui-title{
+			font-weight:bold;
+		}
+		.mui-content img{
+			width:100%;
+			height:200px;
+			display:block;
+		}
+		.wrap{
+			position:absolute;
+			width:150px;
+			text-align:center;
+			background:#fff;
+			border:1px solid #B6B6B6;
+			border-radius:6px;
+			height:50px;
+			z-index:10;
+			right:10px;
+			bottom:60px;
+			line-height:25px;
+		}
+		.wrap:hover{
+			background:rgb(78,145,201);
+			opacity:1;
+			cursor:pointer;
+			border-radius:0;
+			outline:0;
+			border:0;
+			color:#fff;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">预览</h1>
+	    <a class="mui-pull-right">发布</a>
+	</header>
+	<div class="mui-content">
+		<p class="main-content">Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel have a terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan whatever keytar, scenester farm-to-table banksy Austin twitter handle freegan cred raw denim single-origin coffee viral.f</p>
+		<img src="../images/camear.JPG"/>
+		<div class="wrap">
+			<span>提示获取图片</span>
+			<br>
+			<span>￥2.00</span>
+		</div>
+		<div class="mui-row">
+			<h4>照片简述</h4>
+			<span>南极极光</span>
+			<h4>已观看人数</h4>
+			<span>123人</span>
+		</div>
+		<a class="commit" style="display:inline-block;margin:10px auto;">
+			查看评论
+		</a>
+	</div>
+	<script src="../js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+</body>
+
+</html>

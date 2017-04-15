@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="../css/mui.min.css" rel="stylesheet" />
+	<style>
+	    #input1{
+			width:90%;
+			margin:10px auto;
+			display:block;
+			padding:auto;
+		}
+		#input2{
+			display:block;
+			width:90%;
+			margin:0 auto;
+			height:400px;
+			line-height:20px;
+		}
+		.mui-btn-blue{
+			width:100px;
+			line-height:15px;
+			height:35px;
+			padding:10px 20px;
+			margin:10px auto;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style=""></a>
+	    <h1 class="mui-title">添加标题和正文</h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-input-row">
+		    <input type="text" placeholder="添加标题" id="input1">
+		</div>
+		
+		<div class="mui-input-row">
+		    <textarea id="input2" placeholder="正文描述"></textarea>
+		</div>
+		
+		<button type="button" class="mui-btn mui-btn-blue mui-btn-block">下一步</button>
+	</div>
+	<script src="../js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+</body>
+
+</html>
