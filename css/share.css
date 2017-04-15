@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+img{
+	
+	height:80px;
+}
+
+li{
+	position:relative;
+	float:left;
+	list-style:none;
+	overflow:hidden;
+	height:80px;
+}
+
+li input{
+	position:absolute;
+	top:5px;
+	right:3px;
+	opacity:1;
+	outline:none;
+	display:none;
+}

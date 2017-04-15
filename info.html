@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Photo</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="./css/icons-extra.css">    
+</head>
+<body>
+	<nav class="mui-bar mui-bar-tab">
+		<a class="mui-tab-item " id='index'>
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" id="find">
+		        <span class="mui-icon mui-icon-search"></span>
+		        <span class="mui-tab-label">发现</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-contact" id="share">
+			<span class="mui-icon mui-icon-plusempty"></span>
+			<span class="mui-tab-label">分享</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-map" id="question">
+			<span class="mui-icon mui-icon-help"></span>
+			<span class="mui-tab-label">问答</span>
+		</a>
+		<a class="mui-tab-item mui-active" href="#tabbar-with-map" id="info">
+			<span class="mui-icon mui-icon-contact"></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+	<div class="mui-content">
+		<ul class="mui-table-view">
+		    <li class="mui-table-view-cell mui-media" >
+		    	<img src="images/1.JPG" style="display:block;margin:0 auto;width:40px;height:40px;border-radius:50%;"/>
+		        <a class="mui-navigate-right" style="text-align:center;color:#C0C0C0;margin-top:15px;">JAY-and66</a>
+		    </li>
+		</ul>
+		<ul class="mui-table-view" style="margin-top:20px;font-size:13px;font-weight:500;">
+		    <li class="mui-table-view-cell">
+		        <a class="mui-navigate-right">我的分享</a>
+		    </li>
+		    <li class="mui-table-view-cell">
+		        <a class="mui-navigate-right">我的提问</a>
+		    </li>
+		    <li class="mui-table-view-cell">
+		        <a class="mui-navigate-right">我的关注</a>
+		    </li>
+		     <li class="mui-table-view-cell">
+		        <a class="mui-navigate-right">我的收藏</a>
+		    </li>
+		    <li class="mui-table-view-cell">
+		        <a class="mui-navigate-right">最近浏览</a>
+		    </li>
+		    <li class="mui-table-view-cell">
+		        <a class="mui-navigate-right">我的钱包</a>
+		    </li>
+		    <li class="mui-table-view-cell">
+		        <a class="mui-navigate-right">我要提现</a>
+		    </li>
+		</ul>	
+		<ul class="mui-table-view" style="font-size:13px;margin-top:20px;">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                	设置
+	            </a>
+	        </li>
+		</ul>			
+	</div>
+	<script type="text/javascript" charset="utf-8">
+    mui.init();
+    var index = document.getElementById('index');
+    var find = document.getElementById('find');
+    var share = document.getElementById('share');
+    var question = document.getElementById('question');
+    var info = document.getElementById('info');
+    index.onclick = function(){
+    	//打开新窗口
+			mui.openWindow({ 
+					url:'index.html', //需要打开页面的url地址 
+					id:'index',  //需要打开页面的url页面id
+			});
+	}
+	find.onclick = function(){
+		mui.openWindow({ 
+			url:'find.html', //需要打开页面的url地址 
+			id:'find',  //需要打开页面的url页面id
+		});
+	}
+	share.onclick = function(){
+		mui.openWindow({ 
+			url:'share.html', //需要打开页面的url地址 
+			id:'share',  //需要打开页面的url页面id
+		});
+	}
+	question.onclick = function(){
+		mui.openWindow({ 
+			url:'question.html', //需要打开页面的url地址 
+			id:'question',  //需要打开页面的url页面id
+		});
+	}
+	info.onclick = function(){
+		mui.openWindow({ 
+			url:'info.html', //需要打开页面的url地址 
+			id:'info',  //需要打开页面的url页面id
+		});
+	}
+	
+    </script>
+</body>
+
+</html>

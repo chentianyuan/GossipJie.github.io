@@ -1,0 +1,43 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	background:url(../images/caidan.jpg) no-repeat;
+	background-size:cover;
+	height:100%;
+}
+
+.content{
+	background:transparent;
+	margin-top:130%;
+	width:100%;
+  	height:100%;
+}
+
+.join{
+	width:100px;
+	height:35px;
+	line-height:35px;
+	display:block;
+	background:rgba(255,0,0,0.8);
+	text-align:center;
+	margin:0 auto;
+	color:#fff;
+	border-radius:5px;
+	font-size:13px;
+}
+/*win页面*/
+.congratulate{
+	display:inlne-block;
+	width:100%;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	color:rgb(221,82,77);
+}
