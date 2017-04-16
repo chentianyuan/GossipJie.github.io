@@ -12,3 +12,24 @@
     left: 0;
     width: 100%;
 }
+.topic{
+		margin-left: 12px;
+}
+.topic h6{
+	display: inline;
+}
+.mui-card-footer h6{
+	margin-left: -12px;
+	color: #007aff;
+}
+#dianzan{
+	margin-left: 10px;
+}
+.mui-card-footer{
+	width: 100%;
+}
+.mui-h4, h4 {
+    font-size: 18px;
+    color: rgba(93, 86, 86, 0.98);
+    margin-bottom: 12px;
+}

@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title>Photo</title>
     <script src="js/mui.min.js"></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="./css/icons-extra.css"> 
-    <link rel="stylesheet" type="text/css" href="./css/app.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/icons-extra.css">  
+    <link rel="stylesheet" type="text/css" href="./css/app.css">   
 </head>
+
 <body>
-	<header class="mui-bar mui-bar-nav">		
-		<div class="mui-slider">
-		    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-		        <a class="mui-control-item active-item mui-active" href="#item1">热门</a>
-		        <a class="mui-control-item" href="#item2">推荐</a>
-		        <a class="mui-control-item" href="#item2">最新</a>
-		        <a class="mui-control-item" href="#item2">附近</a>
-		    </div>
-		</div>
+	<header class="mui-bar mui-bar-nav">	
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>	
+		<h1 class="mui-title">
+			钓鱼话题
+		</h1>	
 	</header>
 		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item" id='index'>
+			<a class="mui-tab-item mui-active" id='index'>
 				<span class="mui-icon mui-icon-home"></span>
 				<span class="mui-tab-label">首页 </span>
 			</a>
-			<a class="mui-tab-item mui-active" id="find">
+			<a class="mui-tab-item" id="find">
 			        <span class="mui-icon mui-icon-search"></span>
 			        <span class="mui-tab-label">发现</span>
 			</a>
@@ -45,52 +42,17 @@
 		<div class="mui-content">
 			<div class="mui-input-row mui-search">
 			    <input type="search" class="mui-input-clear" placeholder="">
-			</div>	
-			<div class="mui-card">
-				<!--页眉，放置标题-->
-				<div class="mui-card-header mui-card-media">
-					<!-- 用户头像 -->
-					<img src="images/set.jpg" />
-					<div class="mui-media-body">
-						<a href="info.html">大V</a><a href="topic.html" class="topic"><h6>来自风景话题</h6></a>
-						<p>发表于 2016-06-30 15:30</p>	
-						<a class="table"><button type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right" style="margin-top:-34px;font-size:12px;"><span class="mui-icon mui-icon-plusempty"></span> 关注</button></a>
-						
-					</div>					
-				</div>
-				<!--内容区-->
-				<div class="mui-card-content">
-					<!-- 封面 -->
-					<a href="content.html"><img src="./images/city.jpg" alt="" width="100%"></a>
-					<div class="mui-card-content-inner">
-						<!-- 标题 -->
-						<a href="content.html"><h4>此处为文章标题</h4></a>
-						<!-- 摘要 -->
-						<a href="content.html"><p style="color: #333;">此处为文章摘要</p></a>
-					</div>	
-				</div>
-				<!--页脚，放置补充信息或支持的操作-->
-				<div class="mui-card-footer">
-					<a id="allimages"><span class="mui-icon mui-icon-image"></span></a><h6>(5)</h6>
-					<a id="fadeimages"><span class="mui-icon mui-icon-image"></span></a><h6>(0)</h6>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<a id="like"><span class="mui-icon mui-icon-extra mui-icon-extra-like" style="font-size:18px;"></span></a><h6>(79)</h6>
-					<a href="comment.html"><span class="mui-icon mui-icon-chat" style="font-size:18px;"></span></a><h6>(25)</h6>
-					<a id="collect"><span class="mui-icon mui-icon-star"></span></a><h6>(23)</h6>
-					<a href="transpond.html"><span class="mui-icon mui-icon-redo"></span></a></a><h6>(15)</h6>
-					
-				</div>
 			</div>
-	
 			<div class="mui-card">
 				<!--页眉，放置标题-->
 				<div class="mui-card-header mui-card-media">
 					<!-- 用户头像 -->
 					<img src="images/haibao.png" />
 					<div class="mui-media-body">
-						<a href="info.html">小M</a><a href="topic.html" class="topic"><h6>来自钓鱼话题</h6></a>
+						<a href="info.html">小M</a><a href="topic.html" class="topic"></a>
 						<p>发表于 2016-06-30 15:30</p>	
-						<a class="table"><button type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right" style="margin-top:-34px;font-size:12px;"><span class="mui-icon mui-icon-plusempty"></span> 关注</button></a>
+						<span class="mui-icon mui-icon-closeempty mui-pull-right" style="margin-top:-34px;color: #8f8f94;"></span>	
+						<!-- <a class="table"><button type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right" style="margin-top:-34px;font-size:12px;"><span class="mui-icon mui-icon-plusempty"></span> 关注</button></a>	 -->
 						
 					</div>					
 				</div>
@@ -117,8 +79,43 @@
 					
 				</div>
 			</div>
+			<div class="mui-card">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header mui-card-media">
+					<!-- 用户头像 -->
+					<img src="images/set.jpg" />
+					<div class="mui-media-body">
+						<a href="info.html">大V</a><a href="topic.html" class="topic"></a>
+						<p>发表于 2016-06-30 15:30</p>	
+						<span class="mui-icon mui-icon-closeempty mui-pull-right" style="margin-top:-34px;color: #8f8f94;"></span>	
+						<!-- <a class="table"><button type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right" style="margin-top:-34px;font-size:12px;"><span class="mui-icon mui-icon-plusempty"></span> 关注</button></a>	 -->
+						
+					</div>					
+				</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<!-- 封面 -->
+					<a href="content.html"><img src="./images/city.jpg" alt="" width="100%"></a>
+					<div class="mui-card-content-inner">
+						<!-- 标题 -->
+						<a href="content.html"><h4>此处为文章标题</h4></a>
+						<!-- 摘要 -->
+						<a href="content.html"><p style="color: #333;">此处为文章摘要</p></a>
+					</div>	
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">
+					<a id="allimages"><span class="mui-icon mui-icon-image"></span></a><h6>(5)</h6>
+					<a id="fadeimages"><span class="mui-icon mui-icon-image"></span></a><h6>(0)</h6>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a id="like"><span class="mui-icon mui-icon-extra mui-icon-extra-like" style="font-size:18px;"></span></a><h6>(79)</h6>
+					<a href="comment.html"><span class="mui-icon mui-icon-chat" style="font-size:18px;"></span></a><h6>(25)</h6>
+					<a id="collect"><span class="mui-icon mui-icon-star"></span></a><h6>(23)</h6>
+					<a href="transpond.html"><span class="mui-icon mui-icon-redo"></span></a></a><h6>(15)</h6>
+					
+				</div>
+			</div>
 		</div>
-	</div>	
 		<script type="text/javascript" charset="utf-8">
 	    mui.init();
 	    var index = document.getElementById('index');
