@@ -9,12 +9,31 @@
     <link rel="stylesheet" type="text/css" href="./css/icons-extra.css">    
     <style>
 		.mybtn{
-			position: absolute;
+			/*position: absolute;
 			bottom: 65px;
-			margin:0px 30%;;
+			margin:0px 30%;*/
+			text-align: center;
+			position: absolute;
+			bottom: 0;			
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 400px;
+			height: 200px;
 		}
 		.mybtn button{
 			border-radius: 100px;
+			height: 100px;
+			width: 100px;
+		}
+		
+		.mui-btn-success {
+			left: -10px;
+		}
+
+		.mui-btn-warning {
+			right: -10px;
+		    
 		}
     </style>
 </head>
@@ -34,7 +53,7 @@
 			        <span class="mui-tab-label">发现</span>
 			</a>
 			<a class="mui-tab-item mui-active" href="#tabbar-with-contact" id="share">
-				<span class="mui-icon mui-icon-extra mui-icon-extra-holiday"></span>
+				<span class="mui-icon mui-icon-plusempty"></span>
 				<span class="mui-tab-label">分享</span>
 			</a>
 			<a class="mui-tab-item" href="#tabbar-with-map" id="question">
