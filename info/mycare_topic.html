@@ -31,10 +31,10 @@
 		<div class="mui-content"  >
 			<div style="padding: 10px 10px;">
 				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
-					<a class="mui-control-item mui-active" id="people">
+					<a class="mui-control-item" id="people">
 						人物
 					</a>
-					<a class="mui-control-item" id="topics">
+					<a class="mui-control-item mui-active" id="topics">
 						话题
 					</a>
 				</div>
@@ -44,8 +44,8 @@
 		<script>
 			mui.init({
 			    subpages:[{
-			      url:'people.html',//子页面HTML地址，支持本地地址和网络地址
-			      id:'people',//子页面标志
+			      url:'topics.html',//子页面HTML地址，支持本地地址和网络地址
+			      id:'topics',//子页面标志
 			      styles:{
 			        top:'100px',//子页面顶部位置
 			        //bottom:subpage-bottom-position,//子页面底部位置
@@ -55,13 +55,13 @@
 			      },
 			      extras:{}//额外扩展参数
 			    }]
-			});
-			var topics = document.getElementById('topics');
-			topics.onclick = function(){
-				mui.openWindow({
-				    url:'mycare_topic.html',
-				    id:'mycare_topic',	
-				});	
+			});	
+			var people = document.getElementById('people');
+				people.onclick = function(){
+					mui.openWindow({
+				    url:'mycare.html',
+				    id:'mycare',	
+				});
 			}		
 		</script>
 	</body>
