@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 800px;	
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;	
+			}
+			
+		</style>
+	</head>
+	<body>	
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的收藏</h1>
+		</header>
+		<div class="mui-content"  >
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+					<a class="mui-control-item" id="people">
+						问题
+					</a>
+					<a class="mui-control-item mui-active" id="topics">
+						话题
+					</a>
+				</div>
+			</div>
+		</div>		
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+			    subpages:[{
+			      url:'mycollectionContentS.html',//子页面HTML地址，支持本地地址和网络地址
+			      id:'mycollectionContent.S',//子页面标志
+			      styles:{
+			        top:'100px',//子页面顶部位置
+			        //bottom:subpage-bottom-position,//子页面底部位置
+			       // width:subpage-width,//子页面宽度，默认为100%
+			       // height:subpage-height,//子页面高度，默认为100%
+			       // ......
+			      },
+			      extras:{}//额外扩展参数
+			    }]
+			});	
+			var people = document.getElementById('people');
+				people.onclick = function(){
+					mui.openWindow({
+				    url:'mycollectionQuestionsF.html',
+				    id:'mycollectionQuestionsF',	
+				});
+			}		
+		</script>
+	</body>
+</html>
