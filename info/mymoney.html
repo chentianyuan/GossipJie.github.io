@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
 	<style>
 		.mui-control-content {
 			background-color: white;
@@ -58,15 +57,12 @@
 				<a class="mui-control-item" href="#item2mobile">
 					获取金额
 				</a>
-
 			</div>
 			<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
 			<div class="mui-slider-group">
 				<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
 					<div id="scroll1" class="mui-scroll-wrapper">
 						<div class="mui-scroll">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell">
 									<ul class="mui-table-view">
 										<li class="mui-table-view-cell mui-media">
 
@@ -143,43 +139,6 @@
 		</div>
 
 		<script src="../js/mui.min.js"></script>
-		<script>
-			mui.init({
-				swipeBack: false
-			});
-			(function($) {
-				$('.mui-scroll-wrapper').scroll({
-					indicators: true //是否显示滚动条
-				});
-				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell mui-media"><a href="javascript:;"><img class="mui-media-object mui-pull-left" src="../images/cat.jpg"><div class="mui-media-body">-3.00<p class='mui-ellipsis'>查看图片<br>2017/4/17 19:39</p></div></a></li><li class="mui-table-view-cell mui-media"><a href="javascript:;"><img class="mui-media-object mui-pull-left" src="../images/cbd.jpg"><div class="mui-media-body">-15.00<p class='mui-ellipsis'>向xxx打赏<br>2017/4/15 17:34</p></div></a></li><li class="mui-table-view-cell mui-media"><a href="javascript:;"><img class="mui-media-object mui-pull-left" src="../images/house.jpg"><div class="mui-media-body">-9.00<p class='mui-ellipsis'>查看图片<br>2017/4/13</p></div></a></li></ul>';
-				var item2 = document.getElementById('item2mobile');
-
-				document.getElementById('slider').addEventListener('slide', function(e) {
-					if(e.detail.slideNumber === 1) {
-						if(item2.querySelector('.mui-loading')) {
-							setTimeout(function() {
-								item2.querySelector('.mui-scroll').innerHTML = html2;
-							}, 500);
-						}
-					} else if(e.detail.slideNumber === 2) {
-						if(item3.querySelector('.mui-loading')) {
-							setTimeout(function() {
-								item3.querySelector('.mui-scroll').innerHTML = html3;
-							}, 500);
-						}
-					}
-				});
-				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
-				$('.mui-input-group').on('change', 'input', function() {
-					if(this.checked) {
-						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
-						//force repaint
-						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
-					}
-				});
-			})(mui);
-		</script>
-
 </body>
 
 </html>
