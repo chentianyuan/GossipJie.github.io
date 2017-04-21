@@ -71,6 +71,12 @@
 	</div>
 	<script type="text/javascript" charset="utf-8">
     mui.init();
+     mui('body').on('click','a',function(){
+	    	document.location.href=this.href;
+	    });
+		mui('body').on('tap','a',function(){
+			document.location.href=this.href;
+		});
     var index = document.getElementById('index');
     var find = document.getElementById('find');
     var share = document.getElementById('share');

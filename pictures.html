@@ -70,6 +70,12 @@
 <script type="text/javascript">
 	mui.init();
 	mui.plusReady(function(){
+		 mui('body').on('click','a',function(){
+	    	document.location.href=this.href;
+	    });
+		mui('body').on('tap','a',function(){
+			document.location.href=this.href;
+		});
 		openNewScreen();
 		setShare();
 	});

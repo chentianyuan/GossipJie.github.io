@@ -93,9 +93,10 @@
 			    <li class="mui-table-view-cell mui-media">
 			        <a href="javascript:;">
 			            <img class="mui-media-object mui-pull-left" src="images/cat.jpg">
-			            <div class="mui-media-body">
-			                <h5>提问 :</h5>
-			                <p class="mui-ellipsis">请问 , 能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+			            <div class="mui-media-body" style="">
+			                <h5 style="float:left">提问 :</h5><button type="button" style="float:right;padding:3px 8px;font-size:12px;font-weight:bold;" class="mui-btn mui-btn-blue">我要回答</button>
+			                <br>
+			                <p class="mui-ellipsis" style="clear:both">请问 , 能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
 			            </div>
 			        </a>
 			    </li>
@@ -103,8 +104,8 @@
 			        <a href="javascript:;">
 			            <img class="mui-media-object mui-pull-left" src="images/house.jpg">
 			            <div class="mui-media-body">
-			                <h5>提问 :</h5>
-			                <p class="mui-ellipsis">这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖</p>
+			                <h5 style="float:left">提问 :</h5><button type="button" style="float:right;padding:3px 8px;font-size:12px;font-weight:bold;" class="mui-btn mui-btn-blue">我要回答</button>
+			                <p class="mui-ellipsis" style="clear:both">这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖</p>
 			            </div>
 			        </a>
 			    </li>
@@ -112,8 +113,8 @@
 			        <a href="javascript:;">
 			            <img class="mui-media-object mui-pull-left" src="images/city.jpg">
 			            <div class="mui-media-body">
-			                <h5>提问 :</h5>
-			                <p class="mui-ellipsis">这烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+			                <h5 style="float:left">提问 :</h5><button type="button" style="float:right;padding:3px 8px;font-size:12px;font-weight:bold;" class="mui-btn mui-btn-blue">我要回答</button>			              
+			                <p class="mui-ellipsis" style="clear:both">这烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
 			            </div>
 			        </a>
 			    </li>
@@ -122,6 +123,12 @@
 	</div>
 		<script type="text/javascript" charset="utf-8">
 	    mui.init();
+	     mui('body').on('click','a',function(){
+	    	document.location.href=this.href;
+	    });
+		mui('body').on('tap','a',function(){
+			document.location.href=this.href;
+		});
 	    var index = document.getElementById('index');
 	    var find = document.getElementById('find');
 	    var share = document.getElementById('share');
